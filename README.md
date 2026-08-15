@@ -16,5 +16,5 @@ You can down load source code and build in MSVC.
 
 5.pip install ****.whl
 
-6.python testint8int4.py,you'll get int8 and int4 mma test and benchmark result. py file below
+6.python python\tutorials\12-testint8int4.py,you'll get int8 and int4 mma test and benchmark result. 
 
