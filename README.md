@@ -1,1 +1,1 @@
-
+This is a modified triton-windows used for turing(sm75). Baed on triton-windows-3.7.1.post27 from https://github.com/triton-lang/triton-windows. Unlock int8mma and int4mma on turing card. Int4mma code is planted from this repo https://github.com/Chennesxu/triton-turing.
