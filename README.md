@@ -2,6 +2,7 @@ This is a modified triton-windows used for turing(sm75). Baed on triton-windows-
 
 Integer GEMM — INT4 doubles INT8, and cuBLAS has no INT4 path
 <img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/47aa7d67-d94b-4b86-8cab-3dec7d4a2805" />
+
 INT4 (m8n8k32) reaches ≈ 2× the throughput of INT8 (peak 219 TOPS), gaining on both fronts: 2× Tensor Core compute and half the shared-memory traffic (operands stay packed as int32). cuBLAS exposes no INT4 GEMM at all on Turing — this is the first usable pure-int4 matmul in Triton (upstream marks the path "Not implemented"). Triton INT8 also clears cuBLAS INT8 by ~1.8×.
 You can down load source code and build in MSVC.
 1.Open x64 Native Tools Command Prompt for VS 2022 cmd window
